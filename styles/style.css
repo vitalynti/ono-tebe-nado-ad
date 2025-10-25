@@ -1,1 +1,124 @@
-/* место для вашего кода */
+/* ===== ОСНОВНЫЕ БЛОКИ ===== */
+.header,
+.cover,
+.lots,
+.about,
+.footer {
+  padding: 50px;  /* внутренние отступы */
+  margin-bottom: 40px;  /* внешние отступы между блоками */
+}
+
+/* ===== ФОНЫ БЛОКОВ ===== */
+.cover {
+  background-color: #000;  /* черный фон */
+  color: #fff;  /* белый текст */
+  position: relative;  /* для overlay */
+}
+
+.lots {
+  background-color: #fff;  /* белый фон */
+}
+
+.about {
+  background-color: #000;  /* черный фон */
+  color: #fff;  /* белый текст */
+}
+
+.footer {
+  background-color: #f5f5f5;  /* светлый серый фон */
+}
+
+/* ===== OVERLAY ДЛЯ COVER ===== */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.6;  /* 60% прозрачности */
+  z-index: 1;
+}
+
+/* Контент поверх overlay */
+.cover__title,
+.cover__description {
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== ОБЩИЕ КЛАССЫ ДЛЯ ПОВТОРЯЮЩИХСЯ СТИЛЕЙ ===== */
+.dark-section {
+  background-color: #000;
+  color: #fff;
+  padding: 50px;
+  margin-bottom: 40px;
+}
+
+.light-section {
+  background-color: #fff;
+  color: #000;
+  padding: 50px;
+  margin-bottom: 40px;
+}
+
+.section-padding {
+  padding: 50px;
+  margin-bottom: 40px;
+}
+
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px;  /* сверху/снизу и по бокам */
+}
+/* Логотип */
+.header__logo {
+  display: block;           /* делаем ссылку блочной */
+  width: 148px;            /* ширина логотипа из макета */
+  height: 105px;           /* высота логотипа из макета */
+  justify-self: center;    /* выравнивание по центру в гриде */
+}
+
+.header__logo-image {
+  width: 100%;    /* изображение займет всю ширину ссылки */
+  height: 100%;   /* и всю высоту */
+}
+/* Меню */
+.header__menu ul {
+  list-style: none; /* убираем стандартные маркеры */
+  display: flex;    /* располагаем в ряд */
+  gap: 32px;       /* расстояние между пунктами, подбери по макету */
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu a {
+  text-decoration: none;  /* убираем подчеркивание */
+  color: #000;           /* цвет текста */
+  font-size: 18px;       /* размер шрифта */
+  border-bottom: 1px solid transparent; /* для будущего подчеркивания */
+}
+
+.header__menu a:hover {
+  border-bottom-color: #000; /* подчеркивание при наведении */
+}
+/* Блок с адресом */
+.address {
+  max-width: 240px; /* максимальная ширина из макета, подбери точную */
+  justify-self: end; /* выравнивание по правому краю в грид-колонке */
+  font-style: normal; /* сбрасываем курсив браузера */
+  line-height: 1.35; /* межстрочный интервал */
+}
+
+.address a {
+  text-decoration: none; /* убираем подчеркивание */
+  color: #000; /* цвет ссылок */
+  border-bottom: 1px solid transparent; /* для будущего подчеркивания */
+}
+
+.address a:hover {
+  border-bottom-color: #000; /* подчеркивание при наведении */
+}

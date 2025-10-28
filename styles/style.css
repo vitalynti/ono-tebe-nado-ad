@@ -47,7 +47,13 @@
   margin: 0;
   padding: 0;
   align-items: center;
-  height: 100%;
+  flex-direction: row;
+}
+.header__links-list-item {
+  display: flex;
+  align-items: center;
+  height: 21px;
+  position: relative;
 }
 
 .header__link {
@@ -58,6 +64,7 @@
   line-height: 21px;
   display: flex;
   align-items: center;
+   white-space: nowrap;
 }
 
 .header__links-list-item:nth-child(2) .header__link,
@@ -65,7 +72,19 @@
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-
+.header__links-list-item:not(:first-child)::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin-right: 8px;
+  background: transparent;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle; 
+  margin-bottom: 2px;
+}
 .header__logo {
   position: absolute;
   left: 50%;
@@ -316,19 +335,21 @@
 }
 
 .about {
-  display: grid;
-  grid-template-columns: 430px 1fr;
+ display: grid;
+  grid-template-columns: 334px 1fr;
   gap: 25px;
-  padding: 180px 50px;
+  padding: 35px 24px;
   max-width: 1100px;
   margin: 0 auto;
   background-color: #fff;
+  box-sizing: border-box;
 }
-
 .about__column:first-child {
   display: flex;
   justify-content: center;
   align-items: start;
+  width: 240px; /* Точная ширина колонки с лого */
+  height: 240px; /* Точная высота колонки с лого */
 }
 
 .about__logo {
@@ -340,7 +361,9 @@
   justify-content: center;
   align-items: center;
 }
-
+.about__column:last-child {
+  padding-top: 64px; /* Top логотипа из макета */
+}
 .about__logo-image {
   width: 148px;
   height: 114px;
@@ -359,12 +382,13 @@
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 24px; /* Убедитесь что 24px, а не 1.2 */
   color: #000;
+  max-width: 700px; /* Ограничьте ширину текста */
 }
 
 .about__text p {
-  margin: 0 0 25px 0;
+  margin: 0 0 30px 0;
 }
 
 .about__text p:last-child {

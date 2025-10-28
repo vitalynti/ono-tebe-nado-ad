@@ -1,36 +1,31 @@
 
-/* Общие отступы для всех основных блоков */
 .header,
 .cover,
 .lots,
 .about,
 .footer {
-  padding: 50px;           /* внутренние отступы */
-  margin-bottom: 40px;     /* внешние отступы между блоками */
+  padding: 50px;           
+  margin-bottom: 40px;     
 }
 
-/* Фоны блоков */
 .cover {
-  background-color: #000;  /* черный фон */
-  color: #fff;            /* белый текст */
+  background-color: #000;  
+  color: #fff;          
 }
 
 .lots {
-  background-color: #fff;  /* белый фон */
+  background-color: #fff;  
 }
 
 .about {
-  background-color: #000;  /* черный фон */
-  color: #fff;            /* белый текст */
+  background-color: #000;  
+  color: #fff;            
 }
 
 .footer {
-  background-color: #f5f5f5;  /* светлый серый фон */
+  background-color: #f5f5f5;  
 }
 
-/* ===== ПОВТОРЯЮЩИЕСЯ СТИЛИ ===== */
-
-/* Общий класс для темных блоков */
 .dark-section {
   background-color: #000;
   color: #fff;
@@ -38,7 +33,6 @@
   margin-bottom: 40px;
 }
 
-/* Общий класс для светлых блоков */
 .light-section {
   background-color: #fff;
   color: #000;
@@ -46,24 +40,21 @@
   margin-bottom: 40px;
 }
 
-/* Хедер */
-/* Хедер */
-/* Хедер */
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Выравниваем по центру по вертикали */
+  align-items: center;
   padding: 92px 50px;
   position: relative;
   max-width: 1100px;
   margin: 0 auto;
   box-sizing: border-box;
-  height: 105px; /* Фиксированная высота как у логотипа */
+  height: 105px;
 }
-/* Меню - левая колонка */
+
 .header__menu {
   flex-shrink: 0;
-  height: 21px; /* Высота текста меню */
+  height: 21px; 
   display: flex;
   align-items: center;
 }
@@ -82,24 +73,21 @@
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  line-height: 21px; /* Фиксированная высота строки */
+  line-height: 21px; 
   display: flex;
   align-items: center;
 }
 
-/* Подчеркивание для всех кроме первого пункта */
 .header__links-list-item:nth-child(2) .header__link,
 .header__links-list-item:nth-child(3) .header__link {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-/* Лого - центр (УБРАТЬ дублирование!) */
-/* Лого - центр */
 .header__logo {
   position: absolute;
   left: 50%;
-  top: 50%; /* Центрируем по вертикали */
+  top: 50%; 
   transform: translate(-50%, -50%);
   width: 148px;
   height: 105px;
@@ -157,7 +145,7 @@
   margin: 0;
   line-height: 24px;
 }
-/* Секция обложки */
+
 .cover {
   position: relative;
   width: 1100px;
@@ -178,7 +166,6 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Заголовок */
 .cover__title {
   position: relative;
   z-index: 1;
@@ -210,7 +197,6 @@
   text-align: right;
 }
 
-/* Блок описания */
 .cover__description {
   position: relative;
   z-index: 1;
@@ -232,7 +218,6 @@
   margin: 0;
 }
 
-/* Кнопка */
 .bet-button {
   background: transparent;
   border: 1px solid #fff;
@@ -355,7 +340,7 @@
   padding-bottom: 2px;
   display: inline-block;
 }
-/* Секция about */
+
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
@@ -363,17 +348,16 @@
   padding: 180px 50px;
   max-width: 1100px;
   margin: 0 auto;
-  background-color: #fff; /* Белый фон */
+  background-color: #fff;
 }
 
-/* Левая колонка с логотипом */
 .about__column:first-child {
   display: flex;
   justify-content: center;
   align-items: start;
 }
 
-/* Круглый логотип */
+
 .about__logo {
   width: 240px;
   height: 240px;
@@ -389,12 +373,10 @@
   height: 114px;
 }
 
-/* Правая колонка с контентом */
 .about__column:last-child {
-  padding-top: 100px; /* Выравнивание с центром круга */
+  padding-top: 100px;
 }
 
-/* Заголовок */
 .about__title {
   font-family: Raleway, sans-serif;
   font-size: 40px;
@@ -404,7 +386,6 @@
   margin: 0 0 100px 0;
 }
 
-/* Текст */
 .about__text {
   font-family: Raleway, sans-serif;
   font-size: 20px;
@@ -420,7 +401,6 @@
 .about__text p:last-child {
   margin-bottom: 0;
 }
-/* ===== FOOTER ===== */
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -431,7 +411,6 @@
   background-color: #fff;
 }
 
-/* Адрес - левая колонка */
 .footer__address {
   justify-self: start;
   font-style: normal;
@@ -454,7 +433,6 @@
   margin: 0;
 }
 
-/* ===== FOOTER ===== */
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -465,7 +443,6 @@
   background-color: #fff;
 }
 
-/* Адрес - левая колонка */
 .footer__address {
   justify-self: start;
   font-style: normal;
@@ -488,7 +465,6 @@
   margin: 0;
 }
 
-/* ===== FOOTER ===== */
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -499,7 +475,6 @@
   background-color: #fff;
 }
 
-/* Адрес - левая колонка */
 .footer__address {
   justify-self: start;
   font-style: normal;
@@ -509,7 +484,7 @@
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 24.3px; /* точный line-height из макета */
+  line-height: 24.3px;
   color: #000;
 }
 
@@ -517,7 +492,7 @@
   color: #000;
   text-decoration: none;
   display: block;
-  margin-bottom: 6px; /* точные отступы между ссылками */
+  margin-bottom: 6px; 
 }
 
 .address a:last-of-type {
@@ -529,7 +504,6 @@
   line-height: 24.3px;
 }
 
-/* ===== FOOTER ===== */
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -540,7 +514,6 @@
   background-color: #fff;
 }
 
-/* Адрес - левая колонка */
 .footer__address {
   justify-self: start;
   font-style: normal;
@@ -566,7 +539,6 @@
   line-height: 24.3px;
 }
 
-/* Меню - центральная колонка */
 .footer__menu {
   justify-self: center;
   width: 100%;
@@ -579,8 +551,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10.5px;
-  text-align: center;
+  gap: 0;
 }
 .footer__menu-list-item {
   display: flex;
@@ -590,19 +561,27 @@
 
 .footer__menu-link {
   font-family: Raleway, sans-serif;
-  font-size: 18px;
+  font-size: 18px; 
   font-weight: 400;
-  line-height: 21.6px;
-  color: #000;
+  line-height: 100%;
+  color: #000000; 
   text-decoration: none;
-  text-underline-offset: 4px;
+  text-align: center;
+  display: block;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 1px;
 }
-
 .footer__menu-link_active {
   text-decoration: none;
+  border-bottom: none
+}
+.footer__menu-list-item:nth-child(1) { /* главная */
+  margin-bottom: 1px; /* Расстояние до следующего пункта */
 }
 
-/* Социальные сети - правая колонка */
+.footer__menu-list-item:nth-child(2) { /* посмотреть лоты */
+  margin-bottom: 1px; /* Расстояние до следующего пункта */
+}
 .footer__social-list {
   justify-self: end;
   display: flex;

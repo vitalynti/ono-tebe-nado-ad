@@ -1,29 +1,28 @@
-
 .header,
 .cover,
 .lots,
 .about,
 .footer {
-  padding: 50px;           
-  margin-bottom: 40px;     
+  padding: 50px;
+  margin-bottom: 40px;
 }
 
 .cover {
-  background-color: #000;  
-  color: #fff;          
+  background-color: #000;
+  color: #fff;
 }
 
 .lots {
-  background-color: #fff;  
+  background-color: #fff;
 }
 
 .about {
-  background-color: #000;  
-  color: #fff;            
+  background-color: #000;
+  color: #fff;
 }
 
 .footer {
-  background-color: #f5f5f5;  
+  background-color: #f5f5f5;
 }
 
 .dark-section {
@@ -54,10 +53,11 @@
 
 .header__menu {
   flex-shrink: 0;
-  height: 21px; 
+  height: 21px;
   display: flex;
   align-items: center;
 }
+
 .header__links-list {
   display: flex;
   gap: 32px;
@@ -73,7 +73,7 @@
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  line-height: 21px; 
+  line-height: 21px;
   display: flex;
   align-items: center;
 }
@@ -87,7 +87,7 @@
 .header__logo {
   position: absolute;
   left: 50%;
-  top: 50%; 
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 148px;
   height: 105px;
@@ -113,6 +113,7 @@
   line-height: 24px;
   color: #000;
 }
+
 .address__link {
   color: #000;
   text-decoration: none;
@@ -141,6 +142,7 @@
   height: 1px;
   background: #000;
 }
+
 .address__text {
   margin: 0;
   line-height: 24px;
@@ -357,7 +359,6 @@
   align-items: start;
 }
 
-
 .about__logo {
   width: 240px;
   height: 240px;
@@ -401,108 +402,6 @@
 .about__text p:last-child {
   margin-bottom: 0;
 }
-.footer {
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  align-items: start;
-  padding: 180px 50px 90px;
-  max-width: 1340px;
-  margin: 0 auto;
-  background-color: #fff;
-}
-
-.footer__address {
-  justify-self: start;
-  font-style: normal;
-}
-
-.address {
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  line-height: 1.35;
-  color: #000;
-}
-
-.address a {
-  color: #000;
-  text-decoration: none;
-  display: block;
-}
-
-.address p {
-  margin: 0;
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  align-items: start;
-  padding: 180px 50px 90px;
-  max-width: 1340px;
-  margin: 0 auto;
-  background-color: #fff;
-}
-
-.footer__address {
-  justify-self: start;
-  font-style: normal;
-}
-
-.address {
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  line-height: 1.35;
-  color: #000;
-}
-
-.address a {
-  color: #000;
-  text-decoration: none;
-  display: block;
-}
-
-.address p {
-  margin: 0;
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  align-items: start;
-  padding: 180px 50px 90px;
-  max-width: 1340px;
-  margin: 0 auto;
-  background-color: #fff;
-}
-
-.footer__address {
-  justify-self: start;
-  font-style: normal;
-}
-
-.address {
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24.3px;
-  color: #000;
-}
-
-.address a {
-  color: #000;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 6px; 
-}
-
-.address a:last-of-type {
-  margin-bottom: 0;
-}
-
-.address p {
-  margin: 0;
-  line-height: 24.3px;
-}
 
 .footer {
   display: grid;
@@ -532,6 +431,11 @@
   color: #000;
   text-decoration: none;
   display: block;
+  margin-bottom: 6px;
+}
+
+.address a:last-of-type {
+  margin-bottom: 0;
 }
 
 .address p {
@@ -553,35 +457,38 @@
   align-items: center;
   gap: 0;
 }
+
 .footer__menu-list-item {
   display: flex;
   justify-content: center;
 }
 
-
 .footer__menu-link {
   font-family: Raleway, sans-serif;
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: 400;
   line-height: 100%;
-  color: #000000; 
+  color: #000000;
   text-decoration: none;
   text-align: center;
   display: block;
   border-bottom: 1px solid #000000;
   padding-bottom: 1px;
 }
+
 .footer__menu-link_active {
   text-decoration: none;
-  border-bottom: none
-}
-.footer__menu-list-item:nth-child(1) { /* главная */
-  margin-bottom: 1px; /* Расстояние до следующего пункта */
+  border-bottom: none;
 }
 
-.footer__menu-list-item:nth-child(2) { /* посмотреть лоты */
-  margin-bottom: 1px; /* Расстояние до следующего пункта */
+.footer__menu-list-item:nth-child(1) {
+  margin-bottom: 1px;
 }
+
+.footer__menu-list-item:nth-child(2) {
+  margin-bottom: 1px;
+}
+
 .footer__social-list {
   justify-self: end;
   display: flex;

@@ -162,7 +162,6 @@
   background-size: cover;
   background-position: center;
   padding: 165px 50px 50px;
-  width: 100%;
 }
 
 .overlay {
@@ -402,12 +401,7 @@
 .about__text p:last-child {
   margin-bottom: 0;
 }
-.about__text_yes{
-  width: 693px;
-}
-.about__text_ok{
-  width: 686px;
-}
+
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;

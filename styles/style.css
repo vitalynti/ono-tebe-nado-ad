@@ -65,7 +65,7 @@
   line-height: 21px;
   display: flex;
   align-items: center;
-   white-space: nowrap;
+  white-space: nowrap;
 }
 
 .header__links-list-item:nth-child(2) .header__link,
@@ -84,7 +84,7 @@
   background: transparent;
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle; 
+  vertical-align: middle;
   margin-bottom: 2px;
 }
 

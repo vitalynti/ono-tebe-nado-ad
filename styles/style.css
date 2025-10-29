@@ -3,8 +3,8 @@
 .lots,
 .about,
 .footer {
-  padding: 50px;
-  margin-bottom: 40px;
+  max-width: 1100px; /* Должно быть у всех */
+  margin: 0 auto;
 }
 
 .dark-section {
@@ -25,7 +25,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 92px 50px;
+  padding: 146px 50px;
   position: relative;
   max-width: 1100px;
   margin: 0 auto;
@@ -38,11 +38,12 @@
   height: 21px;
   display: flex;
   align-items: center;
+  margin-bottom: 3px;
 }
 
 .header__links-list {
   display: flex;
-  gap: 32px;
+  gap: 19px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -85,19 +86,21 @@
   vertical-align: middle; 
   margin-bottom: 2px;
 }
+
 .header__logo {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 148px;
-  height: 105px;
+  height: 110px;
 }
 
 .header__logo-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  padding: 3px;
 }
 
 .header__address {
@@ -106,6 +109,7 @@
   text-align: left;
   width: 240px;
   height: 98px;
+  padding-right: 25px;
 }
 
 .address {
@@ -158,6 +162,7 @@
   background-size: cover;
   background-position: center;
   padding: 165px 50px 50px;
+  width: 100%;
 }
 
 .overlay {
@@ -181,11 +186,11 @@
   letter-spacing: 30px;
   margin: 0;
   width: 1000px;
-  margin-left: 50px;
+  
 }
 
 .aligned-text {
-  display: block;
+ display: block;
   height: 115px;
   word-spacing: -5px;
   letter-spacing: 5px;
@@ -194,6 +199,9 @@
 
 .aligned-text_center {
   text-align: center;
+  margin-bottom: 42px;
+  padding: 20px;
+  margin-left: 8px;
 }
 
 .aligned-text_right {
@@ -206,8 +214,9 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 78px;
-  margin-top: 135px;
+  gap: 60px;
+  margin-top: 105px;
+  margin-right: 50px;
 }
 
 .cover__description-text {
@@ -218,7 +227,7 @@
   line-height: 28px;
   text-transform: uppercase;
   word-spacing: 18px;
-  margin: 0;
+  margin-right: 50px;
 }
 
 .bet-button {
@@ -231,6 +240,7 @@
   font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
+  margin-right: -50px;
 }
 
 .bet-button:hover {
@@ -240,7 +250,7 @@
 .lots {
   padding: 180px 24px;
   max-width: 1100px;
-  margin: 0 auto;
+  margin-top: -30px;
 }
 
 .lots__heading {
@@ -250,6 +260,7 @@
   text-transform: uppercase;
   margin: 0 0 27px 40px;
   color: #000;
+  margin-top: 32px;
 }
 
 .lots__card-list {
@@ -262,7 +273,7 @@
 
 .lots__card-list-item {
   width: 334px;
-  min-height: 563px;
+  min-height: 596px;
   flex-shrink: 0;
 }
 
@@ -319,7 +330,7 @@
   font-weight: 400;
   line-height: 1.2;
   color: #fff;
-  margin: 0;
+  margin-top: 2px;
 }
 
 .lots__look-more-link {
@@ -328,28 +339,23 @@
   font-weight: 400;
   color: #000;
   text-decoration: none;
-  margin-left: 16px;
+  margin-left: 40px;
   border-bottom: 1px solid #000;
-  padding-bottom: 2px;
   display: inline-block;
 }
 
 .about {
- display: grid;
-  grid-template-columns: 334px 1fr;
-  gap: 25px;
-  padding: 35px 24px;
-  max-width: 1100px;
-  margin: 0 auto;
-  background-color: #fff;
-  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 383px 1fr;
+  margin-top: -60px;
 }
 .about__column:first-child {
   display: flex;
   justify-content: center;
   align-items: start;
-  width: 240px; /* Точная ширина колонки с лого */
-  height: 240px; /* Точная высота колонки с лого */
+  width: 240px;
+  height: 240px;
+  margin-left: 70px;
 }
 
 .about__logo {
@@ -360,9 +366,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 .about__column:last-child {
-  padding-top: 64px; /* Top логотипа из макета */
+  padding-top: 64px;
 }
 .about__logo-image {
   width: 148px;
@@ -376,25 +383,31 @@
   text-transform: uppercase;
   color: #000;
   margin: 0 0 100px 0;
+  margin-top: 70px;
 }
 
 .about__text {
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 24px; /* Убедитесь что 24px, а не 1.2 */
+  line-height: 24px;
   color: #000;
-  max-width: 700px; /* Ограничьте ширину текста */
+  width: 686px; 
 }
 
 .about__text p {
-  margin: 0 0 30px 0;
+  margin: 0 0 25px 0;
 }
 
 .about__text p:last-child {
   margin-bottom: 0;
 }
-
+.about__text_yes{
+  width: 693px;
+}
+.about__text_ok{
+  width: 686px;
+}
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -408,12 +421,15 @@
 .footer__address {
   justify-self: start;
   font-style: normal;
-  width: 240px;
+  width: 265px;
+  font-size: 18px;
+  height: 98px;
+  line-height: 24px;
 }
 
 .footer__menu {
   justify-self: center;
-  width: 100%;
+  width: 164px;
 }
 
 .footer__menu-list {
@@ -423,7 +439,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0;
+  gap: 2px;
 }
 
 .footer__menu-list-item {
